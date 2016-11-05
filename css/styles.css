@@ -32,6 +32,7 @@ header h1{
 
 #R{
     position: absolute;
+    display: none;
     top:20px;
     left:30px;
     /*visibility: visible;*/
