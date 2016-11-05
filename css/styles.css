@@ -1,11 +1,12 @@
 body{
     background-color: #eeffd3;
+    font-size:28px;
 }
 
 .wrapper{
     margin:0 auto;
-    width:900px;
-    min-width:900px;
+    width: 100%;
+    /*min-width:900px;*/
     color: #7d7b7b;
 }
 
@@ -15,6 +16,37 @@ header{
 
 header h1{
     text-align: center;
+    margin: 0 0 0 324px;
+    float: left;
+}
+
+.logo{
+    background: url("../img/Octocat.png") no-repeat 0 0 ;
+    background-size: contain;
+    width:40px;
+    height:40px;
+    margin: 0 318px 0 0;
+    float: right;
+    
+}
+
+#R{
+    position: absolute;
+    top:20px;
+    left:30px;
+    /*visibility: visible;*/
+    width:70px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+header figure{
+    margin: 0 auto;
+    display: table;
 }
 
 .hidden {
@@ -33,6 +65,7 @@ header nav ul{
     align-items:center;
     margin: 10px auto;
     list-style-type: none;
+    padding: 0;
 }
 
 ul li{
@@ -40,15 +73,104 @@ ul li{
     margin: 0 15px;
 }
 
+article{
+    background-color: #ffb23a;
+    width:60%;
+    margin:1vw;
+    padding:7px;
+    float: left;
+}
 
+article h5{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+}
 
+aside{
+    background-color: #a9ff75;
+    width:33%;
+    float: right;
+    margin:10px;
+    padding:7px;
+}
+
+aside h4{
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1300px){
+    body{
+        font-size:98%;
+    }
+
+    .logo{
+        margin: 0 318px 0 0;
+    }
+    header h1{
+        margin: 0 0 0 324px;
+    }
+}
+
+@media screen and (max-width: 983px) {
+    aside{
+        width:36%;
+    }
+
+    aside, article{
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size:98%;
+    }
+
+    .logo{
+        margin: 0 218px 0 0;
+    }
+    header h1{
+        margin: 0 0 0 224px;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    aside{
+        width:33%;
+    }
+}
+@media screen and (max-width: 698px){
+    body{
+        font-size:98%;
+    }
+
+    .logo{
+        margin: 0 118px 0 0;
+    }
+    header h1{
+        margin: 0 0 0 124px;
+    }
+    article, aside{
+        margin:0;
+    }
+}
 
 
 @media screen and (min-width:100px) and (max-width:480px) {
     * {
-        font-size: 80%;
+        font-size: 95%;
     }
-
+    aside{
+        float: left;
+        width:100%;
+    }
+    article{
+        float: right;
+        width:100%;
+    }
     nav {
         display: none;
     }
